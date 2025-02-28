@@ -33,7 +33,7 @@ const updateSession = (dc) => {
 
 async function init() {
     // Get an ephemeral key from your server - see server code below
-    const tokenResponse = await fetch("http://localhost:8000/session");
+    const tokenResponse = await fetch("https://back1.victoriousdune-0c2cceca.westus2.azurecontainerapps.io/session");
     const data = await tokenResponse.json();
     const EPHEMERAL_KEY = data.client_secret.value;
   
